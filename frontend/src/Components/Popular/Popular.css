@@ -1,0 +1,105 @@
+.popular{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height:  10px;
+    margin-bottom: 10px;
+}
+.popular h1{
+    color:black;
+    font-size: 30px;
+    font-weight: 300;
+    font-style: italic;
+    color: palevioletred;
+}
+.popular hr{
+    width: 100px;
+    height: 6px;
+    border-radius: 10px;
+    background:palevioletred;
+}
+.popular-item{
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    height: 20px;
+}
+
+/* Media Queries for responsiveness */
+@media(max-width: 1280px) {
+    .popular {
+        padding: 15px; /* Adjust padding for medium screens */
+    }
+
+    .popular h1 {
+        font-size: 26px; /* Slightly smaller font size */
+    }
+
+    .popular hr {
+        width: 120px; /* Adjust width for medium screens */
+    }
+
+    .popular-item {
+        gap: 15px; /* Increased gap for better spacing */
+    }
+}
+
+@media(max-width: 1024px) {
+    .popular {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .popular h1 {
+        font-size: 22px; /* Further reduced font size */
+    }
+
+    .popular hr {
+        width: 100px; /* Adjust width */
+    }
+
+    .popular-item {
+        gap: 100px; /* Adjusted gap */
+        margin-bottom: 100px;
+        
+    }
+}
+
+@media(max-width: 800px) {
+    .popular {
+        padding: 8px; /* Further reduced padding */
+    }
+
+    .popular h1 {
+        font-size: 18px; /* Smaller font size for small screens */
+    }
+
+    .popular hr {
+        width: 80px; /* Adjust width */
+    }
+
+    .popular-item {
+        gap: 10px; /* Adjusted gap */
+    }
+}
+
+@media(max-width: 500px) {
+    .popular {
+        padding: 5px; /* Minimal padding for very small screens */
+    }
+
+    .popular h1 {
+        font-size: 16px; /* Even smaller font size */
+    }
+
+    .popular hr {
+        width: 60px; /* Adjust width for very small screens */
+    }
+
+    .popular-item {
+        gap: 8px; /* Smaller gap for compact layout */
+        flex-direction: column; /* Stack items vertically if needed */
+        align-items: center; /* Center items */
+        grid-template-columns: 1fr ;
+    }
+}

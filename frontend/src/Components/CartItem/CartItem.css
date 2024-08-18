@@ -1,0 +1,315 @@
+.cartitems {
+    margin: 100px 170px;
+}
+
+.cartitems hr {
+    height: 3px;
+    background: pink;
+    border: 0;
+}
+
+.cartitems-format-main {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 2fr 1fr 1fr 1fr;
+    column-gap: 100px;
+    align-items: center;
+    padding: 20px 0;
+    color: palevioletred;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.cartitems-down {
+    display: flex;
+    margin: 100px 0;
+}
+
+.cartitems-format {
+    font-size: 17px;
+    font-weight: 500;
+    display: flex;
+}
+
+.carticon-product-icon {
+    height: 62px;
+}
+
+.cartitems-remove-icon {
+    width: 15px;
+    margin: 0 40px;
+    cursor: pointer;
+}
+
+.cartitems-quantity {
+    width: 64px;
+    height: 50px;
+    border: 2px solid palevioletred;
+    background: pink;
+}
+
+.cartitems-total {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+    gap: 40px;
+    color: palevioletred;
+    font-style: italic;
+}
+
+.cartitem-totalitem {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.cartitems-total button {
+    width: 262px;
+    height: 58px;
+    outline: none;
+    border: none;
+    background: pink;
+    color: palevioletred;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.cartitems-promocode {
+    flex: 1;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.cartitems-promocode p {
+    color: palevioletred;
+}
+
+.cartitem-promobox {
+    width: 504px;
+    margin-top: 15px;
+    padding-left: 20px;
+    height: 58px;
+    background: pink;
+    margin-left: 50px;
+}
+
+.cartitem-promobox input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    width: 330px;
+    height: 50px;
+}
+
+.cartitem-promobox button {
+    width: 170px;
+    height: 58px;
+    font-size: 16px;
+    background: pink;
+    color: palevioletred;
+    cursor: pointer;
+}
+
+.checkoutdetails {
+    width: 100%;
+    margin: -50px 0;
+    display: flex;
+    padding-top: 0;
+    padding-left: 200px;
+    justify-content: center;
+    row-gap: 50px;
+    margin-bottom: 250px;
+    color: palevioletred;
+    font-style: italic;
+    gap: 30px;
+}
+
+.checkoutdetails-container {
+    width: 580px;
+    height: 600px;
+    margin-top: 500px;
+    margin: auto;
+    padding: 40px 60px;
+}
+
+.checkoutdetails-container h1 {
+    margin: 20px 0;
+}
+
+.checkup-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    margin-top: 30px;
+}
+
+.checkup-fields input {
+    height: 72px;
+    width: 68%;
+    padding-left: 20px;
+    border: 2px solid palevioletred;
+    outline: none;
+    color: palevioletred;
+    font-size: 18px;
+    background-color: pink;
+}
+
+.checkoutdetails-container button {
+    width: 68%;
+    height: 72px;
+    color: pink;
+    background: palevioletred;
+    margin-top: 30px;
+    border: none;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.checkoutdetails-login {
+    margin-top: 20px;
+    color: palevioletred;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.checkoutdetails-agree {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    gap: 20px;
+    color: palevioletred;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Media Queries for responsiveness */
+@media(max-width: 1280px) {
+    .cartitems {
+        margin: 50px 50px; /* Reduced margin */
+    }
+
+    .cartitems-format-main {
+        column-gap: 50px; /* Reduced gap */
+        grid-template-columns: 0.5fr 2fr 2fr 1fr 1fr; /* Adjusted columns */
+    }
+
+    .cartitems-down {
+        margin: 50px 0; /* Reduced margin */
+    }
+
+    .cartitems-total {
+        margin-right: 100px; /* Reduced margin */
+    }
+
+    .cartitem-promobox {
+        width: 400px; /* Reduced width */
+        margin-left: 20px; /* Reduced margin-left */
+    }
+
+    .checkoutdetails {
+        padding-left: 100px; /* Reduced padding */
+    }
+
+    .checkoutdetails-container {
+        width: 500px; /* Reduced width */
+        height: auto; /* Allow height to adjust based on content */
+    }
+}
+
+@media(max-width: 1024px) {
+    .cartitems {
+        margin: 30px 30px; /* Further reduced margin */
+    }
+
+    .cartitems-format-main {
+        column-gap: 30px; /* Further reduced gap */
+        grid-template-columns: 0.5fr 1.5fr 1.5fr 1fr 1fr; /* Adjusted columns */
+    }
+
+    .cartitems-total {
+        margin-right: 50px; /* Further reduced margin */
+    }
+
+    .cartitem-promobox {
+        width: 300px; /* Further reduced width */
+        margin-left: 10px; /* Further reduced margin-left */
+    }
+
+    .checkoutdetails {
+        padding-left: 50px; /* Further reduced padding */
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .checkoutdetails-container {
+        width: 400px; /* Further reduced width */
+        height: auto; /* Allow height to adjust based on content */
+    }
+}
+
+@media(max-width: 800px) {
+    .cartitems {
+        margin: 20px 20px; /* Minimized margin */
+    }
+
+    .cartitems-format-main {
+        column-gap: 20px; /* Minimal gap */
+        grid-template-columns: 1fr 1fr 1fr; /* 3 columns layout */
+    }
+
+    .cartitems-total {
+        margin-right: 20px; /* Minimal margin */
+    }
+
+    .cartitem-promobox {
+        width: 250px; /* Further reduced width */
+        margin-left: 5px; /* Minimal margin-left */
+    }
+
+    .checkoutdetails {
+        padding-left: 20px; /* Minimal padding */
+    }
+
+    .checkoutdetails-container {
+        width: 300px; /* Further reduced width */
+        height: auto; /* Allow height to adjust based on content */
+    }
+}
+
+@media(max-width: 500px) {
+    .cartitems {
+        margin: 10px 10px; /* Minimal margin */
+    }
+
+    .cartitems-format-main {
+        column-gap: 10px; /* Very small gap */
+        grid-template-columns: 1fr 1fr; /* 2 columns layout */
+    }
+
+    .cartitems-down {
+        margin: 20px 0; /* Minimal margin */
+    }
+
+    .cartitems-total {
+        margin-right: 10px; /* Minimal margin */
+    }
+
+    .cartitem-promobox {
+        width: 200px; /* Very small width */
+        margin-left: 0; /* Remove margin-left */
+    }
+
+    .checkoutdetails {
+        padding-left: 10px; /* Minimal padding */
+        flex-direction: column; /* Stack items vertically */
+        row-gap: 20px; /* Reduced gap */
+    }
+
+    .checkoutdetails-container {
+        width: 100%; /* Full width */
+        height: auto; /* Allow height to adjust based on content */
+        padding: 20px; /* Reduced padding */
+    }
+}

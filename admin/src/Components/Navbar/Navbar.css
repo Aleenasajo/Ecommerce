@@ -1,0 +1,26 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 60px;
+    box-shadow: 0 1px 3px -2px blanchedalmond;
+    margin-bottom: 1px;
+    background: pink;
+}
+.nav-profile{
+    width: 35px;
+    height: 35px;
+}
+.navbar p{
+    font-size: 30px;
+    color: palevioletred;
+    font-style: italic;
+}
+@media(max-width:800px){
+    .navbar{
+      padding: 15px 30px;
+  }
+  .nav-profile{
+    width:60px;
+  }
+  }
